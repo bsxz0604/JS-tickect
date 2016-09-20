@@ -1,0 +1,37 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {  
+  50% { 
+    background: white;
+  } 
+}
+
+.loading {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: .25rem solid rgba(0,0,0,0.2);
+    border-top-color: white;
+    animation: spin 1s infinite linear;
+
+}
+
+.loading-double {
+    border-style: double;
+    border-width: .5rem;
+}
+
+
+
+<div class="loading"></div>
+
+or
+
+<div class="loading loading--double"></div>
